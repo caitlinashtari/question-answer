@@ -5,11 +5,6 @@ export default Ember.Route.extend({
     return this.store.findRecord('question', params.question_id);
   },
   actions: {
-    destroyQuestion(question) {
-      question.destroyRecord();
-      this.transitionTo('index');
-    },
-
     update(question, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
@@ -17,6 +12,16 @@ export default Ember.Route.extend({
         }
       });
       question.save();
+      this.transitionTo('index');
+    },
+
+    destroyQuestion(question) {
+      var answer_deletions = question.get('answers').map(function(answer){
+        return answer.destroyRecord();
+      });
+      Ember.RSVP.all(answer_deletions).then(function(){
+        return question.destroyRecord();
+      });
       this.transitionTo('index');
     },
 

@@ -1,3 +1,8 @@
-<h2>{{model.title}}</h2>
-{{question-detail question=model update="update" destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+<h2 class="center">More info about: {{model.title}}</h2>
+<h4 class="center">By {{model.author}}</h4>
+
+{{update-question question=model update="update"}}
+
+{{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+
 {{new-answer saveAnswer="saveAnswer" question=model}}

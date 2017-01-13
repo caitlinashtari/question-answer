@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'teacher-blog',
+    modulePrefix: 'question-answer',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -18,10 +18,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyC-3F9IoCFty5rbCIS8ORkzQLplEURsCiA",
-      authDomain: "questions-answers-742d8.firebaseapp.com",
-      databaseURL: "https://questions-answers-742d8.firebaseio.com",
-      storageBucket: "questions-answers-742d8.appspot.com"
+      apiKey: "AIzaSyBdoj310NcXrMfjudTAeA0L2v7vb7dQJ2s",
+      authDomain: "question-answer-28533.firebaseapp.com",
+      databaseURL: "https://question-answer-28533.firebaseio.com",
+      storageBucket: "question-answer-28533.appspot.com"
     },
 
     APP: {
