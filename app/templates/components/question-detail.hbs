@@ -10,6 +10,13 @@
         <p>{{question.content}}</p>
       </div>
     </div>
+    <h2> Answers </h2>
+    <ul>
+      {{#each question.answers as |answer|}}
+        {{answer-tile answer=answer}}
+      {{/each}}
+    </ul>
+
     {{update-question question=question update="update"}}
     <button {{action 'delete' question}}>Delete Question</button>
   </div>
