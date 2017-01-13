@@ -1,0 +1,31 @@
+{ "questions": [{
+    "title": "How to remove remote origin from git repo",
+    "content": "I am new to git. I just did git init to initialize my folder as git repo and then added a remote repository using git remote add origin url.  Now I want to remove this git remote add origin and add a new repository git remote add origin new-url. How can I do it?",
+    "author": "Kevin",
+    "date": "12-12-2015",
+    "image": ""
+  }, {
+    "title": "How do I return the response from an asynchronous call?",
+    "content": "I have a function foo which makes an Ajax request. How can I return the response from foo? I tried to return the value from the success callback as well as assigning the response to a local variable inside the function and return that one, but none of those ways actually return the response.",
+    "author": "Kayla",
+    "date": "12-12-2017",
+    "image": ""
+    }, {
+    "title": "When to use single quotes, double quotes, and backticks in MySQL",
+    "content": "I am trying to learn the best way to write queries. I also understand the importance of being consistent. Until now, I have randomly used single quotes, double quotes, and backticks without any real thought. What is the standard for this? What do you do?",
+    "author": "Nate",
+    "date": "12-12-2014",
+    "image": ""
+    }],
+  "answers": [{
+    "content": "Backticks are to be used for table and column identifiers, but are only necessary when the identifier is a MySQL reserved keyword, or when the identifier contains whitespace characters or characters beyond a limited set (see below) It is often recommended to avoid using reserved keywords as column or table identifiers when possible, avoiding the quoting issue.",
+    "author": "Andrea",
+    "date": "12-12-2014",
+    "image": ""
+  }, {
+    "content": "git remote remove origin",
+    "author": "Sally",
+    "date": "12-12-2015",
+    "image": ""
+  }]
+}
