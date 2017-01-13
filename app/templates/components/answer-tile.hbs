@@ -1,2 +1,12 @@
-{{answer.author}} says: {{answer.content}} ({{answer.date}})
+<div class="row">
+  <div class="col s12">
+    {{answer.author}} says: {{answer.content}} ({{answer.date}})
+  </div>
+</div>
+<div class="row">
+  <div class="col s12">
+    <img class="responsive-img" src={{answer.image}}>
+  </div>
+
+</div>
 <button {{action 'delete' answer}}>Delete Answer</button>

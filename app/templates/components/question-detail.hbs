@@ -1,20 +1,24 @@
 <div class="row">
   <div class="col s12 well grey">
     <div class="row">
-      <div class="col s6">
-        <img class="responsive-img"src={{question.image}}>
-      </div>
-      <div class="col s6">
-        <h6>By {{question.author}}</h6>
-        <p>{{question.date}}</p>
+      <div class="col s12">
+        <h5>{{question.date}}</h5>
         <p>{{question.content}}</p>
+        <button {{action 'delete' question}}>Delete Question</button>
       </div>
     </div>
-    <h2> Answers </h2>
+    <div class="row">
+      <div class="col s12">
+        <img class="responsive-img" src={{question.image}}>
+      </div>
+    </div>
+    <hr>
+    <h4 class="center"> Answers </h4>
       {{#each question.answers as |answer|}}
+        <hr>
         {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
       {{/each}}
-
-    <button {{action 'delete' question}}>Delete Question</button>
+    <br>
   </div>
+  <hr>
 </div>
