@@ -4,3 +4,7 @@
   <p>Where there's no such thing as a stupid question.</p>
   <hr>
 </div>
+
+{{#each model.questions as |question|}}
+  {{question-tile question=question}}
+{{/each}}
