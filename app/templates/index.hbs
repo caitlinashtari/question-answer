@@ -10,3 +10,11 @@
 {{/each}}
 
 {{new-question saveQuestion2="saveQuestion3"}}
+
+<h2>All Answers</h2>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.author}} says: {{answer.content}} ({{answer.date}})</li>
+  {{/each}}
+</ul>
