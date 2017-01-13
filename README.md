@@ -1,7 +1,10 @@
-# teacher-blog
+# _Question and Answer Message Board_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### By _**Caitlin Ashtari**, 1/12/2017_
+
+## Description
+
+This is a question and answer message board application where a user submits a question and other users can respond with answers.
 
 ## Prerequisites
 
@@ -15,8 +18,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd teacher-blog`
+* `git clone https://github.com/caitlinashtari/question-answer.git
+* `cd question-answer`
 * `npm install`
 * `bower install`
 
@@ -39,14 +42,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Technologies Used
 
-Specify what it takes to deploy your app.
+_Ember, JavaScript, Bootstrap, MaterializeCSS, jQuery _
 
-## Further Reading / Useful Links
+### License
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+*MIT License*
+
+Copyright (c) 2017 **_Caitlin Ashtari_**
